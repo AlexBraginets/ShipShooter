@@ -2241,6 +2241,7 @@ MonoBehaviour:
   _editorSpeed: 1000
   _yawLimit: {x: -37, y: 37}
   _pitchLimit: {x: -40, y: 20}
+  _ironSightHandler: {fileID: 1662142740}
 --- !u!1001 &941522093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4542,6 +4543,7 @@ GameObject:
   - component: {fileID: 1662142738}
   - component: {fileID: 1662142737}
   - component: {fileID: 1662142739}
+  - component: {fileID: 1662142740}
   m_Layer: 5
   m_Name: Iron Sight
   m_TagString: Untagged
@@ -4624,12 +4626,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c51d8c835df5b47a4b66dbe1db5f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animationDuration: 0.3
   _crossViews:
   - {fileID: 1097269900}
   - {fileID: 573393276}
   - {fileID: 384365928}
   - {fileID: 1090850958}
+--- !u!114 &1662142740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662142735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f17762f79ddd8b43af537afb7bf771a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ironSight: {fileID: 1662142739}
+  _offsetSpeed: 2
+  IsMoving: 0
 --- !u!1 &1699659590
 GameObject:
   m_ObjectHideFlags: 0
