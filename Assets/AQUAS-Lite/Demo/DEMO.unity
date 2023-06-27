@@ -1035,6 +1035,10 @@ PrefabInstance:
       propertyPath: _gameInput
       value: 
       objectReference: {fileID: 522398757}
+    - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
+      propertyPath: _shootActionWrapper
+      value: 
+      objectReference: {fileID: 1523624907}
     - target: {fileID: 8952568084315246786, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
       propertyPath: m_Name
       value: Machine gun
@@ -1538,6 +1542,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _period: 60
   _rotationPoint: {fileID: 757398406}
+--- !u!1 &1523624903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4488781905026766806, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
+  m_PrefabInstance: {fileID: 848798338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1523624907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523624903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c49aa519e24334dbedd4074f3cf09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1604017765
 GameObject:
   m_ObjectHideFlags: 0
