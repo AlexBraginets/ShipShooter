@@ -4485,8 +4485,9 @@ GameObject:
   - component: {fileID: 1662142736}
   - component: {fileID: 1662142738}
   - component: {fileID: 1662142737}
+  - component: {fileID: 1662142739}
   m_Layer: 5
-  m_Name: Cross
+  m_Name: Iron Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4555,6 +4556,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662142735}
   m_CullTransparentMesh: 1
+--- !u!114 &1662142739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662142735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c51d8c835df5b47a4b66dbe1db5f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.3
+  _upCross: {fileID: 1097269897}
+  _downCross: {fileID: 573393273}
+  _leftCross: {fileID: 384365925}
+  _rightCross: {fileID: 1090850955}
+  _crossDelta: 15
 --- !u!1 &1699659590
 GameObject:
   m_ObjectHideFlags: 0
