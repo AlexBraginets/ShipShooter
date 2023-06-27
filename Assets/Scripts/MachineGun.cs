@@ -24,7 +24,7 @@ public class MachineGun : MonoBehaviour
       OnStopShooting?.Invoke();
    }
 
-   public void Shoot()
+   private void Shoot()
    {
       Debug.Log("MachineGun.Shoot");
    }

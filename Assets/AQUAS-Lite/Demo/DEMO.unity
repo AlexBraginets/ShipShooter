@@ -1107,6 +1107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lookSpeed: 1000
+  _yawLimit: {x: -20, y: 20}
+  _pitchLimit: {x: -20, y: 20}
 --- !u!1 &1165447896
 GameObject:
   m_ObjectHideFlags: 0
