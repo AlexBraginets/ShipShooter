@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/AQUAS-Lite/Demo/DEMO.unity
     guid: e1118907227ce9744a7cf18c2710396e
+  - enabled: 1
+    path: Assets/Scenes/Main Scene.unity
+    guid: 129feb0643f63ee4c9df6fad4b1076e6
   m_configObjects: {}
