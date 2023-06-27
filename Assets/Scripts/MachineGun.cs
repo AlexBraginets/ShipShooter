@@ -5,7 +5,6 @@ public class MachineGun : MonoBehaviour
 {
     [SerializeField] private GameInput _gameInput;
     [SerializeField] private ShootActionWrapper _shootActionWrapper;
-    [SerializeField] private LayerMask _targetLayerMask;
     [SerializeField] private Camera _camera;
     public event Action OnStartShooting;
     public event Action OnStopShooting;
@@ -35,13 +34,25 @@ public class MachineGun : MonoBehaviour
         var bullet = Instantiate(_bulletPrefab);
         bullet.position = _shootingPoint.position;
         bullet.rotation = _shootingPoint.rotation;
-        
+
         Target target = null;
         Ray ray = _camera.ViewportPointToRay(Vector3.one * .5f);
         var raycastDistance = 1000f;
-        if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance, _targetLayerMask))
+
+        if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance))
         {
             hit.transform.TryGetComponent(out target);
+            float spreadAngle = 5f;
+            float castRadius = (_shootingPoint.position - hit.point).magnitude *
+                               Mathf.Tan(Mathf.Deg2Rad * spreadAngle) * 2;
+            if (Physics.SphereCast(ray,  castRadius,out hit, raycastDistance))
+            {
+                hit.transform.TryGetComponent(out target);
+                if (target)
+                {
+                    Debug.Log("sphere cast hit");
+                }
+            }
         }
 
         Vector3 shootDirection = _camera.transform.forward;
@@ -49,6 +60,7 @@ public class MachineGun : MonoBehaviour
         {
             shootDirection = (hit.point - _shootingPoint.position).normalized;
         }
+
         bullet.GetComponent<Rigidbody>().velocity = shootDirection * _bulletSpeed;
     }
 }

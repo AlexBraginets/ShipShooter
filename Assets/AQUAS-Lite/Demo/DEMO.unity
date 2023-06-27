@@ -2195,7 +2195,7 @@ PrefabInstance:
       objectReference: {fileID: 522398757}
     - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
       propertyPath: _bulletSpeed
-      value: 40
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
       propertyPath: _bulletPrefab
@@ -2280,7 +2280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7e49dd4f22e554ca7afacce8102aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buildSpeed: 150
+  _buildSpeed: 50
   _editorSpeed: 1000
   _yawLimit: {x: -37, y: 37}
   _pitchLimit: {x: -40, y: 20}
@@ -3694,7 +3694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35eb03949649a3347aa30fff1e0e2b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _period: 6000
+  _period: 150
   _rotationPoint: {fileID: 757398406}
 --- !u!1001 &1424498294
 PrefabInstance:
