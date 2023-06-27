@@ -42,17 +42,17 @@ public class MachineGun : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance))
         {
             hit.transform.TryGetComponent(out target);
-            float spreadAngle = 5f;
-            float castRadius = (_shootingPoint.position - hit.point).magnitude *
-                               Mathf.Tan(Mathf.Deg2Rad * spreadAngle) * 2;
-            if (Physics.SphereCast(ray,  castRadius,out hit, raycastDistance))
-            {
-                hit.transform.TryGetComponent(out target);
-                if (target)
-                {
-                    Debug.Log("sphere cast hit");
-                }
-            }
+            // float spreadAngle = 5f;
+            // float castRadius = (_shootingPoint.position - hit.point).magnitude *
+            //                    Mathf.Tan(Mathf.Deg2Rad * spreadAngle) * 2;
+            // if (Physics.SphereCast(ray,  castRadius,out hit, raycastDistance))
+            // {
+            //     hit.transform.TryGetComponent(out target);
+            //     if (target)
+            //     {
+            //         Debug.Log("sphere cast hit");
+            //     }
+            // }
         }
 
         Vector3 shootDirection = _camera.transform.forward;

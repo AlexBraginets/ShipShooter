@@ -25,7 +25,7 @@ public class MachineGunNavigation : MonoBehaviour
 
     private void Awake()
     {
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
