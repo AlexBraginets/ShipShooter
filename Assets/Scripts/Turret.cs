@@ -10,6 +10,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private float _bulletSpeed;
     [SerializeField] private float _shootingRate;
+    [SerializeField] private MuzzleFlash _muzzleFlash;
     private float _yaw;
     private float _pitch;
     private float _shootingBlockedTime;
@@ -42,6 +43,7 @@ public class Turret : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = _bulletSpeed * shootDirection;
 
         _shootingBlockedTime = Time.time + 1f / _shootingRate;
+        _muzzleFlash.Show();
     }
 
     private void FollowTarget()

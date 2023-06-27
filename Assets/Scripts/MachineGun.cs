@@ -11,6 +11,8 @@ public class MachineGun : MonoBehaviour
     [SerializeField] private Transform _bulletPrefab;
     [SerializeField] private Transform _shootingPoint;
     [SerializeField] private float _bulletSpeed;
+    [SerializeField] private MuzzleFlash[] _muzzleFlashes;
+    private int _muzzleFlashIndex;
 
     private void Start()
     {
@@ -62,5 +64,8 @@ public class MachineGun : MonoBehaviour
         }
 
         bullet.GetComponent<Rigidbody>().velocity = shootDirection * _bulletSpeed;
+       _muzzleFlashes[_muzzleFlashIndex].Show();
+       _muzzleFlashIndex++;
+       _muzzleFlashIndex %= _muzzleFlashes.Length;
     }
 }
