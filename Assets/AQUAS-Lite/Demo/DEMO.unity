@@ -282,6 +282,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5810839414581349085, guid: f1713ed05062b9f4eab0f062ece9abae, type: 3}
   m_PrefabInstance: {fileID: 52012126}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &63824856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63824857}
+  m_Layer: 0
+  m_Name: Shooting point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &63824857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63824856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.013, y: 0.86699015, z: 2.755}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 848798339}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &114631744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2163,6 +2194,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 522398757}
     - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
+      propertyPath: _bulletSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 7452537332603971862, guid: 1c3bee4bac57ba2468a649cd098181a1, type: 3}
+    - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
+      propertyPath: _shootingPoint
+      value: 
+      objectReference: {fileID: 63824857}
+    - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
       propertyPath: _shootActionWrapper
       value: 
       objectReference: {fileID: 1523624907}
@@ -2237,7 +2280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7e49dd4f22e554ca7afacce8102aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buildSpeed: 50
+  _buildSpeed: 150
   _editorSpeed: 1000
   _yawLimit: {x: -37, y: 37}
   _pitchLimit: {x: -40, y: 20}
@@ -3651,7 +3694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35eb03949649a3347aa30fff1e0e2b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _period: 60
+  _period: 6000
   _rotationPoint: {fileID: 757398406}
 --- !u!1001 &1424498294
 PrefabInstance:
