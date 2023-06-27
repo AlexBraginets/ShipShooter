@@ -1,18 +1,24 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MachineGun : MonoBehaviour
 {
    [SerializeField] private GameInput _gameInput;
+   public event Action OnStartShooting;
+   public event Action OnStopShooting;
    private void Start()
    {
-      _gameInput.OnShoot += Shoot;
+      _gameInput.OnStartShooting += StartShooting;
+      _gameInput.OnStopShooting += StopShooting;
    }
 
-   private void Shoot()
+   private void StartShooting()
    {
-      Debug.Log("Shoot");
+      OnStartShooting?.Invoke();
+   }
+
+   private void StopShooting()
+   {
+      OnStopShooting?.Invoke();
    }
 }

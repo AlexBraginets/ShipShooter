@@ -3,13 +3,19 @@ using UnityEngine;
 
 public class GameInput : MonoBehaviour
 {
-    public event Action OnShoot;
+    public event Action OnStartShooting;
+    public event Action OnStopShooting;
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            OnShoot?.Invoke();
+            OnStartShooting?.Invoke();
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            OnStopShooting?.Invoke();
         }
     }
 }
