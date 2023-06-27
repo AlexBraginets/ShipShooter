@@ -3,11 +3,23 @@ using UnityEngine;
 
 public class MachineGunNavigation : MonoBehaviour
 {
-    [SerializeField] private float _lookSpeed;
+    [SerializeField] private float _buildSpeed;
+    [SerializeField] private float _editorSpeed;
     [SerializeField] private Vector2 _yawLimit;
     [SerializeField] private Vector2 _pitchLimit;
     private float _yaw;
     private float _pitch;
+
+    private float _lookSpeed
+    {
+        get
+        {
+#if UNITY_EDITOR
+            return _editorSpeed;
+#endif
+            return _buildSpeed;
+        }
+    }
 
     private void Awake()
     {

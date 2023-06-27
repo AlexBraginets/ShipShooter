@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 25600
+  controlID: 35613
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -57,17 +57,17 @@ MonoBehaviour:
   m_SerializedViewNames: []
   m_SerializedViewValues: []
   m_PlayModeViewName: GameView
-  m_ShowGizmos: 1
+  m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 981.5, y: 517.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
+  m_EnterPlayModeBehavior: 1
   m_UseMipMap: 0
   m_VSyncEnabled: 0
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 25601
+  controlID: 35614
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 25602
+  controlID: 35615
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,9 +226,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3874ffff
-      m_LastClickedID: -35784
-      m_ExpandedIDs: 2e2dffff762effff3874ffff6276fffff476ffffd67cffff387fffffee82ffff6883ffff4884ffff3a85ffffb485ffff2087ffff228bffff368cffffee8fffffc292ffff0693ffff5c94ffffdee1ffffe0e1ffffeee4ffff88f7ffff2cfbffff1c5d0000
+      m_SelectedIDs: c06b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6adbfeffa8dbfeffa6ddfeffbedffefffcdffeff1ee3feffa4e6feffe0e6feff02eafeff30effeff6eeffeff6cf1feff42f2feff80f2feffdaf3feff6e02fffff407fffffa07ffff0008ffff0608ffff0c08ffff1208ffff1808ffff1e08ffff2408ffff2a08ffff3008ffff5620ffff2e2dffff762effff3874ffff6276fffff476ffffd67cffff387fffffee82ffff6883ffff4884ffff3a85ffffb485ffff2087ffff228bffff368cffffee8fffffc292ffff0693ffff5c94ffffdee1ffffe0e1ffffeee4ffff88f7ffff2cfbffff1c5d000068a2010070b501002cc30100c8c30100f2c4010042c60100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -312,8 +312,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -100, y: -25.600006}
+      snapOffset: {x: -100, y: -25.600006}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -356,7 +356,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -499,7 +499,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -538,9 +538,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.3322906, y: 8.466789, z: -157.01656}
+    m_Target: {x: -35.203014, y: 79.335, z: -149.84279}
     speed: 2
-    m_Value: {x: 7.3322906, y: 8.466789, z: -157.01656}
+    m_Value: {x: -35.203014, y: 79.335, z: -149.84279}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -587,9 +587,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.28660172, y: -0.2937778, z: 0.09285629, w: -0.9072043}
+    m_Target: {x: -0.31819162, y: 0.033013757, z: -0.011037156, w: -0.94743174}
     speed: 2
-    m_Value: {x: -0.28658915, y: -0.29376492, z: 0.09285221, w: -0.90716445}
+    m_Value: {x: -0.3181916, y: 0.033013757, z: -0.011037156, w: -0.94743174}
   m_Size:
     m_Target: 12.124355
     speed: 2
@@ -689,22 +689,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Target
+    - Assets/AQUAS-Lite
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/Target
+  - Assets/AQUAS-Lite
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Projects\Unity\ShipShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 82.20001}
-    m_SelectedIDs: 6a930000
-    m_LastClickedID: 37738
-    m_ExpandedIDs: 00000000145b0000da5d000000ca9a3b
+    scrollPos: {x: 0, y: 114.20001}
+    m_SelectedIDs: be6b0000
+    m_LastClickedID: 27582
+    m_ExpandedIDs: 00000000145b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -757,26 +757,26 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 3874ffff
-    m_LastClickedInstanceID: -35784
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: c06b0000
+    m_LastClickedInstanceID: 27584
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Readme
+      m_OriginalName: Readme
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 27584
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -33588
+  m_LastSelectedObjectID: 112374
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
