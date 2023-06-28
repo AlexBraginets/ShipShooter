@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Audio;
 using UnityEngine;
 
 public class Turret : MonoBehaviour
@@ -14,10 +15,12 @@ public class Turret : MonoBehaviour
     [SerializeField] private MuzzleFlash _muzzleFlash;
     [SerializeField] private LayerMask _shootingMask;
     [SerializeField] private bool _adjustYaw;
+    [SerializeField] private LoopAudioPlayer _shootAudioPlayer;
     private float _yaw;
     private float _pitch;
     private float _shootingBlockedTime;
     public List<float> yaws = new List<float>();
+    private bool _isShooting;
 
     private void Update()
     {
@@ -27,6 +30,7 @@ public class Turret : MonoBehaviour
 
     private void TryShoot()
     {
+        _isShooting = false;
         if (Time.time < _shootingBlockedTime) return;
         Ray ray = new Ray(transform.position, transform.forward);
         var raycastDistance = 1000f;
@@ -37,10 +41,20 @@ public class Turret : MonoBehaviour
                 Shoot();
             }
         }
+
+        if (_isShooting)
+        {
+            _shootAudioPlayer.Play();
+        }
+        else
+        {
+            _shootAudioPlayer.Stop();
+        }
     }
 
     private void Shoot()
     {
+        _isShooting = true;
         var bullet = Instantiate(_bulletPrefab, _shootPoint.position, _shootPoint.rotation);
         Vector3 shootDirection = (_target.position - _shootPoint.position).normalized;
         bullet.GetComponent<Rigidbody>().velocity = _bulletSpeed * shootDirection;
@@ -65,10 +79,10 @@ public class Turret : MonoBehaviour
             {
                 _yaw -= 360f;
             }
-            
         }
+
         _yaw = Mathf.Clamp(_yaw, _yawLimit.x, _yawLimit.y);
-        
+
 
         _pitch = Mathf.Clamp(_pitch, _pitchLimit.x, _pitchLimit.y);
         transform.localRotation = Quaternion.AngleAxis(_yaw, Vector3.up) * Quaternion.AngleAxis(_pitch, Vector3.right);

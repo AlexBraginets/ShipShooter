@@ -3208,8 +3208,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409251988}
-  m_LocalRotation: {x: 0.18964222, y: -0.000013577985, z: -0, w: -0.98185325}
-  m_LocalPosition: {x: -0.0002711434, y: -3.7870321, z: 0.73145473}
+  m_LocalRotation: {x: -0.3211873, y: 0.20144361, z: 0.028809126, w: 0.92489415}
+  m_LocalPosition: {x: 0.45734328, y: -7.033313, z: 27.401854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6162,6 +6162,10 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 789233368}
+    - target: {fileID: 1804185937945052995, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3569167473953898994, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_Name
       value: S5
