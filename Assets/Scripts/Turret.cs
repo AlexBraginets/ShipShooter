@@ -11,6 +11,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private float _bulletSpeed;
     [SerializeField] private float _shootingRate;
     [SerializeField] private MuzzleFlash _muzzleFlash;
+    [SerializeField] private LayerMask _shootingMask;
     private float _yaw;
     private float _pitch;
     private float _shootingBlockedTime;
@@ -27,7 +28,7 @@ public class Turret : MonoBehaviour
         if (Time.time < _shootingBlockedTime) return;
         Ray ray = new Ray(transform.position, transform.forward);
         var raycastDistance = 1000f;
-        if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance))
+        if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance, _shootingMask))
         {
             if (hit.transform.CompareTag("Player"))
             {

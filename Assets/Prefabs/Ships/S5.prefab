@@ -2018,6 +2018,7 @@ GameObject:
   - component: {fileID: 762944012320633461}
   - component: {fileID: 762944012320633459}
   - component: {fileID: 762944012320633460}
+  - component: {fileID: 7034897791026927879}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2090,6 +2091,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7034897791026927879
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762944012320633462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 9317bc47ba2cd1341b59953ab6359ad1, type: 3}
 --- !u!1 &762944012394916689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2493,7 @@ MonoBehaviour:
   _health: {fileID: 6435496462348050893}
   _healthBar: {fileID: 6372860865107632625}
   _visuals: {fileID: 6153542519196178542}
+  _hideOnStart: 1
 --- !u!1 &6153542519196178542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,6 +2587,7 @@ MonoBehaviour:
   _health: {fileID: 6435496462348050893}
   _healthBar: {fileID: 6372860865107632625}
   _visuals: {fileID: 0}
+  _hideOnStart: 1
 --- !u!1 &9166695002956838910
 GameObject:
   m_ObjectHideFlags: 0
