@@ -2076,6 +2076,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 23856432, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0002711434
+      objectReference: {fileID: 0}
+    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7870321
+      objectReference: {fileID: 0}
+    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.73145473
+      objectReference: {fileID: 0}
+    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.98185325
+      objectReference: {fileID: 0}
+    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.18964222
+      objectReference: {fileID: 0}
+    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000013577985
+      objectReference: {fileID: 0}
+    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 789233372, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _healthFlashMonitor
       value: 
@@ -2086,31 +2118,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.030624
+      value: -62.712418
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.357896
+      value: -22.191809
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.6764922
+      value: 12.048531
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.74206144
+      value: 0.8169947
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.30718142
+      value: -0.36801887
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.58364475
+      value: 0.43213645
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.11976368
+      value: 0.10168554
       objectReference: {fileID: 0}
     - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _gameInput
@@ -2257,6 +2289,10 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 789233368}
+    - target: {fileID: 6837292041618103210, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
+      propertyPath: _shootingMask.m_Bits
+      value: 2101303
+      objectReference: {fileID: 0}
     - target: {fileID: 7486756067340111367, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -2269,10 +2305,18 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 789233368}
+    - target: {fileID: 7494203631801236639, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
+      propertyPath: _shootingMask.m_Bits
+      value: 2101303
+      objectReference: {fileID: 0}
     - target: {fileID: 8484529047605884219, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 789233368}
+    - target: {fileID: 8484529047605884219, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
+      propertyPath: _shootingMask.m_Bits
+      value: 2101303
+      objectReference: {fileID: 0}
     - target: {fileID: 8937423600606223495, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_audioClip
       value: 
