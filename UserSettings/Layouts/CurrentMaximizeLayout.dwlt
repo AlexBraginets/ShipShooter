@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 181835
+  controlID: 190424
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 181836
+  controlID: 190425
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 181793
+  controlID: 190449
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,9 +226,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 66adf0ffc6adf0ff6eaef0ffdcaef0ff22aff0ffaeaff0ffd2aff0ff10b0f0ffe2b9f0fff2cdf0ff68cef0fff4dbf0ffb02cf1ff72a7f2ffc0a7f2ff64adf2ffd2f4f3ffdaf4f3ffe4f4f3ff1af5f3ffcef8f3ffd8f8f3ff00f9f3ff1eb9f4ff0693fcff32670600a0750600b6760600ea770600dc7806002279060024480700ac480700b44907005e4d0700e6e50700
+      m_SelectedIDs: be97eeff5c93eeff468eeeff
+      m_LastClickedID: -1143226
+      m_ExpandedIDs: ced6eeff66adf0ffc6adf0ff6eaef0ff22aff0ffd2aff0ff10b0f0ffe2b9f0fff2cdf0ff68cef0fff4dbf0ffb02cf1ff72a7f2ffc0a7f2ff64adf2ffd2f4f3ffdaf4f3ffe4f4f3ff1af5f3ffcef8f3ffd8f8f3ff00f9f3ff1eb9f4ff0693fcff32670600a0750600b6760600ea770600dc7806002279060024480700ac480700b44907005e4d0700
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.4775023, y: 16.247196, z: -87.96191}
+    m_Target: {x: 50.055756, y: 6.0046444, z: -48.78886}
     speed: 2
-    m_Value: {x: -6.4775023, y: 16.247196, z: -87.96191}
+    m_Value: {x: 50.055756, y: 6.0046444, z: -48.78886}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -586,13 +586,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.28775904, y: -0.42272475, z: 0.14414018, w: -0.84744227}
+    m_Target: {x: 0.21457432, y: 0.60441613, z: -0.17410104, w: 0.7475167}
     speed: 2
-    m_Value: {x: 0.28775904, y: 0.42272478, z: -0.14414018, w: 0.84744227}
+    m_Value: {x: 0.21457432, y: 0.60441613, z: -0.17410104, w: 0.7475167}
   m_Size:
-    m_Target: 4.9011602
+    m_Target: 85.871025
     speed: 2
-    m_Value: 4.9011602
+    m_Value: 85.871025
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -646,7 +646,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 2}
   m_Selected: 4
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -689,21 +689,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Projectiles
+    - Assets/Prefabs/Ships
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/Projectiles
+  - Assets/Prefabs/Ships
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Projects\Unity\ShipShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 175}
-    m_SelectedIDs: 343b0200
-    m_LastClickedID: 146228
+    scrollPos: {x: 0, y: 47.80002}
+    m_SelectedIDs: 8a8c0300
+    m_LastClickedID: 232586
     m_ExpandedIDs: 00000000145b00001e5b0000ee5b0000da5d00009e5e0000f0610000e0870100148801008cbd0200cebd0200f2bd0200febd020032be02006abe02008c4b0400964b0400a24b0400a44b0400a64b0400a84b0400aa4b040000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
