@@ -1,4 +1,5 @@
 using System;
+using UI;
 using UnityEngine;
 using Views;
 
@@ -13,6 +14,7 @@ public class MachineGun : MonoBehaviour
     [SerializeField] private Transform _shootingPoint;
     [SerializeField] private float _bulletSpeed;
     [SerializeField] private MuzzleFlash[] _muzzleFlashes;
+    [SerializeField] private IronSight _ironSight;
     private int _muzzleFlashIndex;
 
     private void Start()
@@ -74,13 +76,24 @@ public class MachineGun : MonoBehaviour
     {
         Ray ray = _camera.ViewportPointToRay(Vector3.one * .5f);
         var raycastDistance = 1000f;
-
+        bool isTargetInView = false;
         if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance))
         {
             if(hit.transform.TryGetComponent(out IronSightDetector ironSightDetector))
             {
                 ironSightDetector.OnEnter();
             }
+
+            isTargetInView = hit.transform.TryGetComponent(out Target target);
+        }
+
+        if (isTargetInView)
+        {
+            _ironSight.SetOnTarget();
+        }
+        else
+        {
+            _ironSight.ResetOnTarget();
         }
     }
 }
