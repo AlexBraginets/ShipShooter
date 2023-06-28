@@ -19,7 +19,6 @@ namespace Views
         private Color m_Color;
         private float m_StartLightIntensity;
         private float m_FadeSpeed;
-        private float m_TimeScale = 1;
 
         private void Awake()
         {

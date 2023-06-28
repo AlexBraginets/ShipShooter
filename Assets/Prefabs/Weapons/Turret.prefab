@@ -649,8 +649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5a2e1c97cd4924d9cc53427428872a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _value: 100
-  _maxValue: 100
+  _value: 2000
+  _maxValue: 2000
 --- !u!136 &5006430947365277594
 CapsuleCollider:
   m_ObjectHideFlags: 0
