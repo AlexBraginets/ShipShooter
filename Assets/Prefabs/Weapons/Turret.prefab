@@ -584,6 +584,7 @@ GameObject:
   - component: {fileID: 5006430947365277594}
   - component: {fileID: 3616302539386161908}
   - component: {fileID: 3554584020326795602}
+  - component: {fileID: 6466128211945636935}
   m_Layer: 12
   m_Name: Turret
   m_TagString: Untagged
@@ -693,6 +694,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthView: {fileID: 3825978865320022167}
   _highlightDuration: 0.6
+--- !u!114 &6466128211945636935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047561735084661796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35067e988f2af524daeb3a83cf388c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8430281694284454540
 GameObject:
   m_ObjectHideFlags: 0
