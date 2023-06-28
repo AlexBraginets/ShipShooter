@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float _maxValue = 100;
     public event Action<float> OnChanged;
     public float RelativeValue => _value / _maxValue;
+    public float MaxValue => _maxValue;
     public float Value
     {
         get => _value;

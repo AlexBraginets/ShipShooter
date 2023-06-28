@@ -9,13 +9,17 @@ public class MachineGunAudio : MonoBehaviour
 
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private float _burstDuration;
+
     private float _stopAudioTime;
+
     // Start is called before the first frame update
     private bool _isShooting = false;
+
     void Start()
     {
-        _machineGun.OnStartShooting += Play;
-        _machineGun.OnStopShooting += Stop;
+        // _machineGun.OnStartShooting += Play;
+        // _machineGun.OnStopShooting += Stop;
+        _machineGun.OnShoot += _audioSource.Play;
         enabled = false;
     }
 

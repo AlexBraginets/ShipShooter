@@ -8,11 +8,14 @@ namespace Views
         [SerializeField] private Health _health;
         [SerializeField] private Image _healthBar;
         [SerializeField] private GameObject _visuals;
+        [SerializeField] private bool _hideOnStart = true;
+
         private void Start()
         {
             _health.OnChanged += UpdateView;
             UpdateView(_health.RelativeValue);
-            Hide();
+            if (_hideOnStart)
+                Hide();
         }
 
         private void UpdateView(float relativeHealth)

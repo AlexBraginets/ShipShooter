@@ -10,6 +10,7 @@ public class MachineGun : MonoBehaviour
     [SerializeField] private Camera _camera;
     public event Action OnStartShooting;
     public event Action OnStopShooting;
+    public event Action OnShoot; 
     [SerializeField] private Transform _bulletPrefab;
     [SerializeField] private Transform _shootingPoint;
     [SerializeField] private float _bulletSpeed;
@@ -70,6 +71,7 @@ public class MachineGun : MonoBehaviour
        _muzzleFlashes[_muzzleFlashIndex].Show();
        _muzzleFlashIndex++;
        _muzzleFlashIndex %= _muzzleFlashes.Length;
+       OnShoot?.Invoke();
     }
 
     private void Update()
