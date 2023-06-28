@@ -140,7 +140,7 @@ MonoBehaviour:
   _shootingMask:
     serializedVersion: 2
     m_Bits: 4151
-  _adjustYaw: 0
+  _adjustYaw: 1
   _shootAudioPlayer: {fileID: 3019468276761683079}
   yaws: []
 --- !u!114 &1787245553320364686
@@ -477,7 +477,6 @@ GameObject:
   - component: {fileID: 848663952607785818}
   - component: {fileID: 8207419122611838064}
   - component: {fileID: 4433968730731887769}
-  - component: {fileID: 4698555232285179420}
   m_Layer: 12
   m_Name: Frame
   m_TagString: Untagged
@@ -544,19 +543,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4698555232285179420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2810320727760343464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4208a3ebe4173744a942bd1ba9a68f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 0}
 --- !u!1 &3940213297597937866
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +700,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1368,7 +1354,7 @@ MonoBehaviour:
   _shootingMask:
     serializedVersion: 2
     m_Bits: 4151
-  _adjustYaw: 0
+  _adjustYaw: 1
   _shootAudioPlayer: {fileID: 3888849862798820148}
   yaws: []
 --- !u!114 &3862794167656679318
@@ -1522,7 +1508,6 @@ GameObject:
   - component: {fileID: 2918528145009309933}
   - component: {fileID: 7877525948992052709}
   - component: {fileID: 3978210039698945007}
-  - component: {fileID: 6615248847080952751}
   m_Layer: 12
   m_Name: Frame
   m_TagString: Untagged
@@ -1589,19 +1574,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6615248847080952751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6622001965547366968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4208a3ebe4173744a942bd1ba9a68f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 0}
 --- !u!1 &6663556562757763861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,7 +2148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 762944012394916689, guid: 6c9b512078c353f4084e21574360c976, type: 3}
       propertyPath: m_Name
-      value: S5 Variant
+      value: Enemy ship
       objectReference: {fileID: 0}
     - target: {fileID: 762944012394916689, guid: 6c9b512078c353f4084e21574360c976, type: 3}
       propertyPath: m_Layer
@@ -2306,24 +2278,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7683064555011095684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4208a3ebe4173744a942bd1ba9a68f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 0}
---- !u!1 &7961090014452560589 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6153542519196178542, guid: 6c9b512078c353f4084e21574360c976, type: 3}
-  m_PrefabInstance: {fileID: 4260052721923123875}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2002575904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7961090014452560589}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4208a3ebe4173744a942bd1ba9a68f7, type: 3}
