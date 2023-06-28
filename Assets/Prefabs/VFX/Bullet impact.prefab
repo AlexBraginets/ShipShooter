@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 198850276615030494}
   - component: {fileID: 199411089768296384}
   m_Layer: 0
-  m_Name: SandDust
+  m_Name: Bullet impact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
