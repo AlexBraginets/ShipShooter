@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Turret : MonoBehaviour
@@ -12,15 +13,16 @@ public class Turret : MonoBehaviour
     [SerializeField] private float _shootingRate;
     [SerializeField] private MuzzleFlash _muzzleFlash;
     [SerializeField] private LayerMask _shootingMask;
+    [SerializeField] private bool _adjustYaw;
     private float _yaw;
     private float _pitch;
     private float _shootingBlockedTime;
-    
+    public List<float> yaws = new List<float>();
+
     private void Update()
     {
-       FollowTarget();
-       TryShoot();
-
+        FollowTarget();
+        TryShoot();
     }
 
     private void TryShoot()
@@ -56,7 +58,18 @@ public class Turret : MonoBehaviour
         lerpRotation = Quaternion.Inverse(transform.parent.rotation) * lerpRotation;
         _yaw = lerpRotation.eulerAngles.y;
         _pitch = lerpRotation.eulerAngles.x;
+        yaws.Add(_yaw);
+        if (_adjustYaw)
+        {
+            if (_yaw >= 180f)
+            {
+                _yaw -= 360f;
+            }
+            
+        }
         _yaw = Mathf.Clamp(_yaw, _yawLimit.x, _yawLimit.y);
+        
+
         _pitch = Mathf.Clamp(_pitch, _pitchLimit.x, _pitchLimit.y);
         transform.localRotation = Quaternion.AngleAxis(_yaw, Vector3.up) * Quaternion.AngleAxis(_pitch, Vector3.right);
     }
