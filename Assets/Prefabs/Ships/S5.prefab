@@ -2145,6 +2145,7 @@ GameObject:
   - component: {fileID: 6435496462348050893}
   - component: {fileID: 270856604838696497}
   - component: {fileID: 8401327879080956767}
+  - component: {fileID: 8641360516492267769}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -2233,6 +2234,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _explosionPrefab: {fileID: 400000, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
   _health: {fileID: 6435496462348050893}
+--- !u!114 &8641360516492267769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2960696796751267215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e89f7d97000b3b44b94c3a44ca00835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthView: {fileID: 8331860863112513852}
+  _highlightDuration: 0.6
 --- !u!1 &3555294597077403601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,7 +2260,7 @@ GameObject:
   - component: {fileID: 8875508720956747795}
   - component: {fileID: 6372860865107632625}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Health bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2340,7 +2355,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 484710684127155139}
+  - {fileID: 9007503288970304444}
   m_Father: {fileID: 8885934253727145619}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2410,6 +2425,59 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &5872981851609323047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9007503288970304444}
+  - component: {fileID: 8331860863112513852}
+  m_Layer: 0
+  m_Name: Health View
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9007503288970304444
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872981851609323047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 484710684127155139}
+  m_Father: {fileID: 6968294020055661050}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 2.22}
+  m_SizeDelta: {x: 4, y: 0.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8331860863112513852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872981851609323047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aaff212eb4b4d841baabbb43f2c3f2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 6435496462348050893}
+  _healthBar: {fileID: 6372860865107632625}
+  _visuals: {fileID: 6153542519196178542}
 --- !u!1 &6153542519196178542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,7 +2491,7 @@ GameObject:
   - component: {fileID: 6622193481373987606}
   - component: {fileID: 7190429940294523353}
   m_Layer: 0
-  m_Name: Health View
+  m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2436,18 +2504,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6153542519196178542}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5506407227460737062}
-  m_Father: {fileID: 6968294020055661050}
+  m_Father: {fileID: 9007503288970304444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.22}
+  m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: 4, y: 0.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7606677195742006767
@@ -2502,6 +2570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: {fileID: 6435496462348050893}
   _healthBar: {fileID: 6372860865107632625}
+  _visuals: {fileID: 0}
 --- !u!1 &9166695002956838910
 GameObject:
   m_ObjectHideFlags: 0

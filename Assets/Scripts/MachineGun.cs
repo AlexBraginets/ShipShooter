@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Views;
 
 public class MachineGun : MonoBehaviour
 {
@@ -67,5 +68,19 @@ public class MachineGun : MonoBehaviour
        _muzzleFlashes[_muzzleFlashIndex].Show();
        _muzzleFlashIndex++;
        _muzzleFlashIndex %= _muzzleFlashes.Length;
+    }
+
+    private void Update()
+    {
+        Ray ray = _camera.ViewportPointToRay(Vector3.one * .5f);
+        var raycastDistance = 1000f;
+
+        if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance))
+        {
+            if(hit.transform.TryGetComponent(out IronSightDetector ironSightDetector))
+            {
+                ironSightDetector.OnEnter();
+            }
+        }
     }
 }
