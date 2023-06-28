@@ -1,48 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MachineGunAudio : MonoBehaviour
+namespace Audio
 {
-    [SerializeField] private MachineGun _machineGun;
-
-    [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private float _burstDuration;
-
-    private float _stopAudioTime;
-
-    // Start is called before the first frame update
-    private bool _isShooting = false;
-
-    void Start()
+    public class MachineGunAudio : MonoBehaviour
     {
-        // _machineGun.OnStartShooting += Play;
-        // _machineGun.OnStopShooting += Stop;
-        _machineGun.OnShoot += _audioSource.Play;
-        enabled = false;
-    }
+        [SerializeField] private MachineGun _machineGun;
+        [SerializeField] private AudioSource _audioSource;
 
-    private void Stop()
-    {
-        _stopAudioTime = Time.time + _burstDuration;
-        _isShooting = false;
-    }
-
-    private void Play()
-    {
-        enabled = true;
-        _audioSource.Play();
-        _isShooting = true;
-    }
-
-    private void Update()
-    {
-        if (_isShooting) return;
-        if (Time.time >= _stopAudioTime)
+        private void Start()
         {
-            _audioSource.Stop();
-            enabled = false;
+            _machineGun.OnShoot += _audioSource.Play;
         }
     }
 }
