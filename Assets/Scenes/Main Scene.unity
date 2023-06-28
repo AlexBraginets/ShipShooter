@@ -2110,11 +2110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 789233370, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _value
-      value: 15000
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 789233370, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _maxValue
-      value: 15000
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 789233372, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _healthFlashMonitor
@@ -2126,31 +2126,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0002711434
+      value: -142.3265
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7870321
+      value: -93.34149
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.73145473
+      value: 39.036377
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.98185325
+      value: 0.72487754
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18964222
+      value: -0.2858602
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000013577985
+      value: 0.61619884
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.11461089
       objectReference: {fileID: 0}
     - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _gameInput
