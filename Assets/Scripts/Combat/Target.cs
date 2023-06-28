@@ -13,7 +13,6 @@ namespace Combat
         public void Damage(float amount)
         {
             OnDamage?.Invoke();
-            Debug.Log("Target.Damage");
             _health.Value -= amount;
             if (_health.Value < .001f)
             {
