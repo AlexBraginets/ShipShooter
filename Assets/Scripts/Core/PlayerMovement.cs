@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+namespace Core
 {
-    [SerializeField] private float _period;
-    [SerializeField] private Transform _rotationPoint;
-
-    private void Update()
+    public class PlayerMovement : MonoBehaviour
     {
-        float dAngle = Time.deltaTime / _period * 360f;
-        transform.RotateAround(_rotationPoint.position, Vector3.up, dAngle);
+        [SerializeField] private float _period;
+        [SerializeField] private Transform _rotationPoint;
+
+        private void Update()
+        {
+            float dAngle = Time.deltaTime / _period * 360f;
+            transform.RotateAround(_rotationPoint.position, Vector3.up, dAngle);
+        }
     }
 }

@@ -1,26 +1,30 @@
 using System;
+using Core;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+namespace Combat
 {
-    [SerializeField] private Transform _explosionPrefab;
-    [SerializeField] private Health _health;
-    public event Action OnDamage;
-
-    public void Damage(float amount)
+    public class Target : MonoBehaviour
     {
-        OnDamage?.Invoke();
-        Debug.Log("Target.Damage");
-        _health.Value -= amount;
-        if (_health.Value < .001f)
+        [SerializeField] private Transform _explosionPrefab;
+        [SerializeField] private Health _health;
+        public event Action OnDamage;
+
+        public void Damage(float amount)
         {
-            Destroy();
+            OnDamage?.Invoke();
+            Debug.Log("Target.Damage");
+            _health.Value -= amount;
+            if (_health.Value < .001f)
+            {
+                Destroy();
+            }
         }
-    }
 
-    public void Destroy()
-    {
-        Instantiate(_explosionPrefab, transform.position, transform.rotation);
-        Destroy(gameObject);
+        public void Destroy()
+        {
+            Instantiate(_explosionPrefab, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
 }

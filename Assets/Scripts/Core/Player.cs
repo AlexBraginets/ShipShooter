@@ -1,16 +1,21 @@
+using Combat;
+using UI;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+namespace Core
 {
-    [SerializeField] private Target _target;
-    [SerializeField] private HealthFlashMonitor _healthFlashMonitor;
-    private void Start()
+    public class Player : MonoBehaviour
     {
-        _target.OnDamage += OnDamage;
-    }
+        [SerializeField] private Target _target;
+        [SerializeField] private HealthFlashMonitor _healthFlashMonitor;
+        private void Start()
+        {
+            _target.OnDamage += OnDamage;
+        }
 
-    private void OnDamage()
-    {
-        _healthFlashMonitor.OnDamage();
+        private void OnDamage()
+        {
+            _healthFlashMonitor.OnDamage();
+        }
     }
 }

@@ -1,21 +1,24 @@
 using System;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+namespace Core
 {
-    [SerializeField] private float _value = 100;
-    [SerializeField] private float _maxValue = 100;
-    public event Action<float> OnChanged;
-    public float RelativeValue => _value / _maxValue;
-    public float MaxValue => _maxValue;
-    public float Value
+    public class Health : MonoBehaviour
     {
-        get => _value;
-        set
+        [SerializeField] private float _value = 100;
+        [SerializeField] private float _maxValue = 100;
+        public event Action<float> OnChanged;
+        public float RelativeValue => _value / _maxValue;
+        public float MaxValue => _maxValue;
+        public float Value
         {
-            if (_value == value) return;
-            _value = Mathf.Clamp(value, 0, _maxValue);
-            OnChanged?.Invoke(RelativeValue);
+            get => _value;
+            set
+            {
+                if (_value == value) return;
+                _value = Mathf.Clamp(value, 0, _maxValue);
+                OnChanged?.Invoke(RelativeValue);
+            }
         }
     }
 }

@@ -1,24 +1,27 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+namespace Combat
 {
-    [SerializeField] private float _damage;
-    [SerializeField] private Transform _dustPrefab;
-
-    private void OnCollisionEnter(Collision collision)
+    public class Bullet : MonoBehaviour
     {
-        if (collision.collider.TryGetComponent(out Target target))
-        {
-            target.Damage(_damage);
-        }
+        [SerializeField] private float _damage;
+        [SerializeField] private Transform _dustPrefab;
 
-        if (_dustPrefab)
+        private void OnCollisionEnter(Collision collision)
         {
-            var contact = collision.contacts[0];
-            var dust = Instantiate(_dustPrefab, contact.point, Quaternion.LookRotation(contact.normal));
-            Destroy(dust.gameObject, 4f);
-        }
+            if (collision.collider.TryGetComponent(out Target target))
+            {
+                target.Damage(_damage);
+            }
+
+            if (_dustPrefab)
+            {
+                var contact = collision.contacts[0];
+                var dust = Instantiate(_dustPrefab, contact.point, Quaternion.LookRotation(contact.normal));
+                Destroy(dust.gameObject, 4f);
+            }
        
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 }
