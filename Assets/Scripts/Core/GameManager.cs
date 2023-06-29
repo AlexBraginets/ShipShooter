@@ -8,6 +8,7 @@ namespace Core
    {
       [SerializeField] private Objective _objective;
       [SerializeField] private WinPopup _winPopup;
+      [SerializeField] private LosePopup _losePopup;
       private void Awake()
       {
          Application.targetFrameRate = 120;
@@ -21,7 +22,7 @@ namespace Core
 
       public void Lose()
       {
-         Debug.LogError("You lost!");
+         _losePopup.Show();
       }
    }
 }
