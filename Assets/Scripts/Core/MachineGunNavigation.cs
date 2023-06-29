@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UserInput;
 using Views;
@@ -19,12 +20,18 @@ namespace Core
 
         private void Update()
         {
+            if (_input.IsBlocked) return;
             _yaw += _input.dYaw;
             _pitch -= _input.dPitch;
             _yaw = Mathf.Clamp(_yaw, _yawLimit.x, _yawLimit.y);
             _pitch = Mathf.Clamp(_pitch, _pitchLimit.x, _pitchLimit.y);
             transform.localRotation = Quaternion.AngleAxis(_yaw, Vector3.up) * Quaternion.AngleAxis(_pitch, Vector3.right);
             _ironSightHandler.IsMoving = _input.IsMoving;
+        }
+
+        public void SlowlyReset(float duration)
+        {
+            transform.DOLocalRotate(Vector3.zero, duration);
         }
     }
 }

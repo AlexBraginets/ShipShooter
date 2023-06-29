@@ -1,6 +1,8 @@
 using Combat;
+using DG.Tweening;
 using UnityEngine;
 using UserInput;
+using Views;
 
 namespace Core
 {
@@ -12,6 +14,10 @@ namespace Core
         [SerializeField] private Target _target;
         [SerializeField] private BoxCollider _playerCollider;
         [SerializeField] private PlayerMovement _playerMovement;
+        [SerializeField] private MachineGunNavigation _machineGunNavigation;
+        [SerializeField] private CameraLostAnimator _cameraLostAnimator;
+        [SerializeField] private IronSightHandler _ironSightHandler;
+
         private void Start()
         {
             _target.OnDestroyed += OnPlayerDestroyed;
@@ -24,6 +30,10 @@ namespace Core
             _gameInput.StopShooting();
             _playerCollider.enabled = false;
             _playerMovement.SlowlyStop(5f);
+            _ironSightHandler.SlowlyHide(1f);
+            float resetDuration = .75f;
+            _machineGunNavigation.SlowlyReset(resetDuration);
+            DOVirtual.DelayedCall(resetDuration, _cameraLostAnimator.Animate);
             _gameManager.Lose();
         }
     }
