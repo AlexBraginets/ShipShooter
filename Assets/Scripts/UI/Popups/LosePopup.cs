@@ -7,6 +7,8 @@ namespace UI.Popups
     {
         [SerializeField] private Animator _animator;
         [SerializeField] private GameObject _label;
+        [SerializeField] private RestartPopup _restartPopup;
+        [SerializeField] private float _showRestartPopupDelay;
         [SerializeField] private float _showLabelDelay;
         private const string SHOW = "Show";
 
@@ -14,6 +16,7 @@ namespace UI.Popups
         {
             gameObject.SetActive(true);
             DOVirtual.DelayedCall(_showLabelDelay, ShowLabel);
+            DOVirtual.DelayedCall(_showRestartPopupDelay, _restartPopup.Show);
         }
 
         private void ShowLabel()

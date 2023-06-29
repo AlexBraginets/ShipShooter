@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Objectives;
 using UI.Popups;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace Core
       [SerializeField] private Objective _objective;
       [SerializeField] private WinPopup _winPopup;
       [SerializeField] private LosePopup _losePopup;
+      [SerializeField] private float _showWinPopupDelay;
       private void Awake()
       {
          Application.targetFrameRate = 120;
@@ -17,7 +19,7 @@ namespace Core
 
       private void Win()
       {
-         _winPopup.Show();
+         DOVirtual.DelayedCall(_showWinPopupDelay, _winPopup.Show);
       }
 
       public void Lose()

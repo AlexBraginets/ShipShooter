@@ -15,7 +15,7 @@ namespace Core
         private float _pitch;
         private void Awake()
         {
-            Cursor.lockState = CursorLockMode.Locked;
+            // Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()
