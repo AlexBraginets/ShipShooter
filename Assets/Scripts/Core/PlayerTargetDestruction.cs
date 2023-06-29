@@ -29,9 +29,9 @@ namespace Core
             _machineGunNavigationInput.IsBlocked = true;
             _gameInput.StopShooting();
             _playerCollider.enabled = false;
-            _playerMovement.SlowlyStop(5f);
-            _ironSightHandler.SlowlyHide(1f);
-            float resetDuration = .75f;
+            _playerMovement.SlowlyStop(2f);
+            _ironSightHandler.SlowlyHide(.5f);
+            float resetDuration = .5f;
             _machineGunNavigation.SlowlyReset(resetDuration);
             DOVirtual.DelayedCall(resetDuration, _cameraLostAnimator.Animate);
             _gameManager.Lose();

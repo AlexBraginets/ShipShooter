@@ -1599,8 +1599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ebbfa4b8025442af102fa2700276e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 1
-  _yOffset: 2
+  _duration: 0.7
+  _yOffset: 3
   _boat: {fileID: 1579136456}
   _machineGun: {fileID: 91842689}
   _drownParent: {fileID: 1459788670}
@@ -1896,7 +1896,7 @@ MonoBehaviour:
   _camera: {fileID: 1525295568}
   _player: {fileID: 1385151606}
   _animator: {fileID: 1525295569}
-  _detachCameraDelay: 3
+  _detachCameraDelay: 1
   _playerDrown: {fileID: 1459788671}
 --- !u!1 &1528797134
 GameObject:
@@ -2847,31 +2847,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0074791
+      value: -0.00027114365
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8715346
+      value: -3.7870321
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1751535
+      value: 0.7314548
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.8794491
+      value: -0.98185325
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.28567675
+      value: 0.18964222
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3778474
+      value: -0.000013577985
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.04679079
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _gameInput
