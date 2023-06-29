@@ -585,6 +585,7 @@ GameObject:
   - component: {fileID: 3616302539386161908}
   - component: {fileID: 3554584020326795602}
   - component: {fileID: 6466128211945636935}
+  - component: {fileID: 3450241931801898376}
   m_Layer: 12
   m_Name: Turret
   m_TagString: Untagged
@@ -678,7 +679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b427c02fc220f4599df9828b8743e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionPrefab: {fileID: 5667657901370128921, guid: 6413ffa592e0eb04680aa74ffc2109e7, type: 3}
   _health: {fileID: 2303403338031020134}
 --- !u!114 &3554584020326795602
 MonoBehaviour:
@@ -706,6 +706,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35067e988f2af524daeb3a83cf388c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3450241931801898376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047561735084661796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc8c5d25d4a25547b54c09a8b4f1b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explosionPrefab: {fileID: 5667657901370128926, guid: 6413ffa592e0eb04680aa74ffc2109e7, type: 3}
+  _target: {fileID: 3616302539386161908}
 --- !u!1 &8430281694284454540
 GameObject:
   m_ObjectHideFlags: 0

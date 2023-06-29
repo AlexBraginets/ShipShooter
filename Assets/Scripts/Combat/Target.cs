@@ -6,24 +6,25 @@ namespace Combat
 {
     public class Target : MonoBehaviour
     {
-        [SerializeField] private Transform _explosionPrefab;
         [SerializeField] private Health _health;
         public event Action OnDamage;
+        public event Action OnDestroyed;
+        private bool _isDestroyed = false;
 
         public void Damage(float amount)
         {
             OnDamage?.Invoke();
             _health.Value -= amount;
-            if (_health.Value < .001f)
+            if (_health.Value < .001f && !_isDestroyed)
             {
                 Destroy();
             }
         }
 
-        public void Destroy()
+        private void Destroy()
         {
-            Instantiate(_explosionPrefab, transform.position, transform.rotation);
-            Destroy(gameObject);
+            _isDestroyed = true;
+            OnDestroyed?.Invoke();
         }
     }
 }

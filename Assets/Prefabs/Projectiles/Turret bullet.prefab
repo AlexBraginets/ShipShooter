@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedc71a0c610c3f4fb2d4f217bc0aed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 5
+  _damage: 500
   _dustPrefab: {fileID: 0}
   _rb: {fileID: 7452537332603971860}
 --- !u!114 &-2413709156878350494
