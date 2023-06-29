@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4963715236617322954}
   - component: {fileID: 5297184903060305397}
+  - component: {fileID: 7809316199973088044}
   m_Layer: 15
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4963715236617322954
 Transform:
   m_ObjectHideFlags: 0
@@ -74,7 +75,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.1
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -131,6 +132,19 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &7809316199973088044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339255594003408824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6d73c9c9d5a204695fdfab19256a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trail: {fileID: 5297184903060305397}
 --- !u!1 &7452537332603971863
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +157,7 @@ GameObject:
   - component: {fileID: 7452537332603971861}
   - component: {fileID: 7452537332603971860}
   - component: {fileID: 7783066018846126299}
+  - component: {fileID: 2411222150015925117}
   m_Layer: 15
   m_Name: Machine gun bullet
   m_TagString: Untagged
@@ -209,7 +224,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 5
-  _dustPrefab: {fileID: 4574365299044294, guid: 3dbb2ce6aad411d4c806391df358c403, type: 3}
+  _dustPrefab: {fileID: 7049417674690678400, guid: 3dbb2ce6aad411d4c806391df358c403, type: 3}
+  _rb: {fileID: 7452537332603971860}
+--- !u!114 &2411222150015925117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452537332603971863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3408bf14f989c468befebcb4426f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _disableDelay: 2
 --- !u!1 &7452537334286822052
 GameObject:
   m_ObjectHideFlags: 0

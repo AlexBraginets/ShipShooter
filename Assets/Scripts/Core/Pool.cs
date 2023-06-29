@@ -14,7 +14,12 @@ namespace Core
             Instance = this;
         }
 
-        public T Get<T>(T prefab) where T : MonoBehaviour
+        public static T Get<T>(T prefab) where T : MonoBehaviour
+        {
+            return Instance.GetInstance(prefab);
+        }
+
+        private T GetInstance<T>(T prefab) where T : MonoBehaviour
         {
             BasePool pool;
             if (_pools.ContainsKey(typeof(T)))

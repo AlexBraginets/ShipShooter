@@ -1,4 +1,5 @@
 using System;
+using Core;
 using UI;
 using UnityEngine;
 using Views;
@@ -12,8 +13,8 @@ namespace Combat
         [SerializeField] private Camera _camera;
         public event Action OnStartShooting;
         public event Action OnStopShooting;
-        public event Action OnShoot; 
-        [SerializeField] private Transform _bulletPrefab;
+        public event Action OnShoot;
+        [SerializeField] private Bullet _bulletPrefab;
         [SerializeField] private Transform _shootingPoint;
         [SerializeField] private float _bulletSpeed;
         [SerializeField] private MuzzleFlash[] _muzzleFlashes;
@@ -39,9 +40,10 @@ namespace Combat
 
         private void Shoot()
         {
-            var bullet = Instantiate(_bulletPrefab);
-            bullet.position = _shootingPoint.position;
-            bullet.rotation = _shootingPoint.rotation;
+            var bullet = Pool.Get(_bulletPrefab);
+            var bulletTransform = bullet.transform;
+            bulletTransform.position = _shootingPoint.position;
+            bulletTransform.rotation = _shootingPoint.rotation;
 
             Target target = null;
             Ray ray = _camera.ViewportPointToRay(Vector3.one * .5f);
@@ -50,17 +52,6 @@ namespace Combat
             if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance))
             {
                 hit.transform.TryGetComponent(out target);
-                // float spreadAngle = 5f;
-                // float castRadius = (_shootingPoint.position - hit.point).magnitude *
-                //                    Mathf.Tan(Mathf.Deg2Rad * spreadAngle) * 2;
-                // if (Physics.SphereCast(ray,  castRadius,out hit, raycastDistance))
-                // {
-                //     hit.transform.TryGetComponent(out target);
-                //     if (target)
-                //     {
-                //         Debug.Log("sphere cast hit");
-                //     }
-                // }
             }
 
             Vector3 shootDirection = _camera.transform.forward;
@@ -69,7 +60,7 @@ namespace Combat
                 shootDirection = (hit.point - _shootingPoint.position).normalized;
             }
 
-            bullet.GetComponent<Rigidbody>().velocity = shootDirection * _bulletSpeed;
+            bullet.SetVelocity(shootDirection * _bulletSpeed);
             _muzzleFlashes[_muzzleFlashIndex].Show();
             _muzzleFlashIndex++;
             _muzzleFlashIndex %= _muzzleFlashes.Length;
@@ -83,7 +74,7 @@ namespace Combat
             bool isTargetInView = false;
             if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance))
             {
-                if(hit.transform.TryGetComponent(out IronSightDetector ironSightDetector))
+                if (hit.transform.TryGetComponent(out IronSightDetector ironSightDetector))
                 {
                     ironSightDetector.OnEnter();
                 }

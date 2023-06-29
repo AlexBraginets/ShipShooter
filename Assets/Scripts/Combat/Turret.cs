@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Audio;
+using Core;
 using UnityEngine;
 using Views;
 
@@ -58,9 +59,13 @@ namespace Combat
         private void Shoot()
         {
             _isShooting = true;
-            var bullet = Instantiate(_bulletPrefab, _shootPoint.position, _shootPoint.rotation);
+            var bullet = Pool.Get(_bulletPrefab);
+            var bulletTransform = bullet.transform;
+            bulletTransform.position = _shootPoint.position;
+            bulletTransform.rotation = _shootPoint.rotation;
+
             Vector3 shootDirection = (_target.position - _shootPoint.position).normalized;
-            bullet.GetComponent<Rigidbody>().velocity = _bulletSpeed * shootDirection;
+            bullet.SetVelocity(_bulletSpeed * shootDirection);
 
             _shootingBlockedTime = Time.time + 1f / _shootingRate;
             _muzzleFlash.Show();
@@ -88,7 +93,8 @@ namespace Combat
 
 
             _pitch = Mathf.Clamp(_pitch, _pitchLimit.x, _pitchLimit.y);
-            transform.localRotation = Quaternion.AngleAxis(_yaw, Vector3.up) * Quaternion.AngleAxis(_pitch, Vector3.right);
+            transform.localRotation =
+                Quaternion.AngleAxis(_yaw, Vector3.up) * Quaternion.AngleAxis(_pitch, Vector3.right);
         }
     }
 }

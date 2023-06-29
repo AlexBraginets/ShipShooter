@@ -704,6 +704,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644327157}
   m_Mesh: {fileID: 4300002, guid: 681e41ee1260343b395ca58745c94870, type: 3}
+--- !u!1 &686330580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 686330581}
+  - component: {fileID: 686330582}
+  m_Layer: 0
+  m_Name: Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &686330581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686330580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1657878702}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686330582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686330580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bbf0e2acffe2c4d8eeda4c135fb0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &777670799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,6 +1985,7 @@ Transform:
   - {fileID: 189636553}
   - {fileID: 364797042}
   - {fileID: 1625457339}
+  - {fileID: 686330581}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2469,6 +2514,14 @@ PrefabInstance:
       propertyPath: _ironSight
       value: 
       objectReference: {fileID: 1480203009}
+    - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: _bulletSpeed
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 7783066018846126299, guid: ba760c59278927541abd74c7752e74c1, type: 3}
     - target: {fileID: 6652177332744242237, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _rotationPoint
       value: 
@@ -2561,6 +2614,10 @@ PrefabInstance:
     - target: {fileID: 3569167473953898994, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_Name
       value: Enemy ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569167473953898994, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3569167473953898995, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_RootOrder

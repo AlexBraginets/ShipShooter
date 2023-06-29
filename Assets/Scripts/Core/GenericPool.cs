@@ -28,6 +28,7 @@ namespace Core
                 instances.Add(instance);
             }
 
+            instance.gameObject.SetActive(true);
             return instance;
         }
 

@@ -1,3 +1,4 @@
+using Core;
 using UnityEngine;
 
 namespace Combat
@@ -5,7 +6,8 @@ namespace Combat
     public class Bullet : MonoBehaviour
     {
         [SerializeField] private float _damage;
-        [SerializeField] private Transform _dustPrefab;
+        [SerializeField] private PoolObject _dustPrefab;
+        [SerializeField] private Rigidbody _rb;
 
         private void OnCollisionEnter(Collision collision)
         {
@@ -17,11 +19,19 @@ namespace Combat
             if (_dustPrefab)
             {
                 var contact = collision.contacts[0];
-                var dust = Instantiate(_dustPrefab, contact.point, Quaternion.LookRotation(contact.normal));
-                Destroy(dust.gameObject, 4f);
+                var dust = Pool.Get(_dustPrefab);
+                var dustTransform = dust.transform;
+                dustTransform.position = contact.point;
+                dustTransform.forward = contact.normal;
+                dust.Disable(.5f);
             }
-       
-            Destroy(gameObject);
+
+            gameObject.SetActive(false);
+        }
+
+        public void SetVelocity(Vector3 velocity)
+        {
+            _rb.velocity = velocity;
         }
     }
 }
