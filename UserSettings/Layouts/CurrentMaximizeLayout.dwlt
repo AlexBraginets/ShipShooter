@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 38521
+  controlID: 40848
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 38522
+  controlID: 40849
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 38523
+  controlID: 40850
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,10 +225,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 80f3fdff
-      m_LastClickedID: -134272
-      m_ExpandedIDs: 5ef9ffff3cfaffff74faffff7efaffffe8faffff30fbffff265900003e590000
+      scrollPos: {x: 0, y: 18}
+      m_SelectedIDs: 7048feff
+      m_LastClickedID: -112528
+      m_ExpandedIDs: 7048feff5ef9ffff3cfaffff74faffff7efaffffe8faffff30fbffff265900003e59000086590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -754,22 +754,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Views
+    - Assets/Scripts/UI/Popups
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Views
+  - Assets/Scripts/UI/Popups
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Projects\Unity\ShipShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 302.2}
-    m_SelectedIDs: 72610000
-    m_LastClickedID: 24946
-    m_ExpandedIDs: 0000000090600000ac60000000ca9a3b
+    m_SelectedIDs: d0810100
+    m_LastClickedID: 98768
+    m_ExpandedIDs: 0000000090600000ac6000006c61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -822,9 +822,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 80f3fdff
-    m_LastClickedInstanceID: -134272
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 7048feff
+    m_LastClickedInstanceID: -112528
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -913,7 +913,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -134272
+  m_LastSelectedObjectID: -112528
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
