@@ -9,6 +9,8 @@ namespace Views
         [SerializeField] private Player _player;
         [SerializeField] private Animator _animator;
         [SerializeField] private float _detachCameraDelay;
+        [SerializeField] private PlayerDrown _playerDrown;
+
         private const string LOST = "Lost";
 
         public void Animate()
@@ -22,6 +24,7 @@ namespace Views
         {
             _animator.enabled = false;
             _camera.transform.parent = null;
+            _playerDrown.Animate();
         }
     }
 }
