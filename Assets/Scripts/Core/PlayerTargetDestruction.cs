@@ -11,6 +11,7 @@ namespace Core
         [SerializeField] private MachineGunNavigationInput _machineGunNavigationInput;
         [SerializeField] private Target _target;
         [SerializeField] private BoxCollider _playerCollider;
+        [SerializeField] private PlayerMovement _playerMovement;
         private void Start()
         {
             _target.OnDestroyed += OnPlayerDestroyed;
@@ -22,6 +23,7 @@ namespace Core
             _machineGunNavigationInput.IsBlocked = true;
             _gameInput.StopShooting();
             _playerCollider.enabled = false;
+            _playerMovement.SlowlyStop(5f);
             _gameManager.Lose();
         }
     }
