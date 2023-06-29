@@ -16,6 +16,7 @@ namespace UI.Popups
         {
             gameObject.SetActive(true);
             _gameInput.IsBlocked = true;
+            _gameInput.StopShooting();
             var buttonRect = (_button.transform as RectTransform);
             Vector2 anchoredPosition = buttonRect.anchoredPosition;
             buttonRect.anchoredPosition = anchoredPosition + _animationOffset;
