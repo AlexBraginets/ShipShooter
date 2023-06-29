@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 65052
+  controlID: 65490
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 65053
+  controlID: 65491
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 65054
+  controlID: 65492
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,10 +225,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4c430200
-      m_LastClickedID: 148300
-      m_ExpandedIDs: 4223fdffd0a9fdff10b2fdff4eb2fdffc8b6fdff7048feff5ef9ffff3cfaffff74faffff7efaffffe8faffff30fbffff265900003e59000086590000f44102000244020074440200
+      scrollPos: {x: 0, y: 120}
+      m_SelectedIDs: 8e5f0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 4223fdffd0a9fdff10b2fdff4eb2fdffc8b6fdff7048feff5ef9ffff3cfaffff74faffff7efaffffe8faffff30fbffff265900003e5900008659000008410200f4410200e44202000244020074440200c4440200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -771,22 +771,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/UI/Popups
+    - Assets/Prefabs/Projectiles
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/UI/Popups
+  - Assets/Prefabs/Projectiles
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Projects\Unity\ShipShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 239}
-    m_SelectedIDs: d0810100
-    m_LastClickedID: 98768
-    m_ExpandedIDs: 0000000090600000ac6000006c61000000ca9a3b
+    scrollPos: {x: 0, y: 175}
+    m_SelectedIDs: 3a6c0000
+    m_LastClickedID: 27706
+    m_ExpandedIDs: 0000000090600000a6600000ac6000006c61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -839,26 +839,26 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 4c430200
-    m_LastClickedInstanceID: 148300
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 8e5f0000
+    m_LastClickedInstanceID: 24462
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Projectiles
+      m_OriginalName: Projectiles
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 27706
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

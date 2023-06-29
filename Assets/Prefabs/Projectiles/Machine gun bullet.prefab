@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedc71a0c610c3f4fb2d4f217bc0aed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 200
+  _damage: 5
   _dustPrefab: {fileID: 7049417674690678400, guid: 3dbb2ce6aad411d4c806391df358c403, type: 3}
   _rb: {fileID: 7452537332603971860}
 --- !u!114 &2411222150015925117

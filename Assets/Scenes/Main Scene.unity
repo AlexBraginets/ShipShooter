@@ -1700,6 +1700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPS Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5684605537942326870, guid: 35361ebcfd9765048b3fc2e1a7cd0f0c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5684605537942326890, guid: 35361ebcfd9765048b3fc2e1a7cd0f0c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
