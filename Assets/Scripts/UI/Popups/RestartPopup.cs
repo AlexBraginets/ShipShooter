@@ -2,6 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UserInput;
 
 namespace UI.Popups
 {
@@ -10,11 +11,11 @@ namespace UI.Popups
         [SerializeField] private Button _button;
         [SerializeField] private Vector2 _animationOffset;
         [SerializeField] private float _animationDuration;
-
-        [ContextMenu("Show")]
+        [SerializeField] private GameInput _gameInput;
         public void Show()
         {
             gameObject.SetActive(true);
+            _gameInput.IsBlocked = true;
             var buttonRect = (_button.transform as RectTransform);
             Vector2 anchoredPosition = buttonRect.anchoredPosition;
             buttonRect.anchoredPosition = anchoredPosition + _animationOffset;

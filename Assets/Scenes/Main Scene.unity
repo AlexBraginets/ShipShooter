@@ -1549,6 +1549,7 @@ MonoBehaviour:
   _button: {fileID: 1760755358}
   _animationOffset: {x: 1000, y: 0}
   _animationDuration: 1
+  _gameInput: {fileID: 1147708659}
 --- !u!1 &1283348472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3882,7 +3883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3569167473953898994, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3569167473953898995, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_RootOrder
