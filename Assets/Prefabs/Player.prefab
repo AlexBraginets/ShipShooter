@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 789233370}
   - component: {fileID: 789233371}
   - component: {fileID: 789233372}
+  - component: {fileID: 1385151610}
   m_Layer: 21
   m_Name: Player
   m_TagString: Player
@@ -261,7 +262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b427c02fc220f4599df9828b8743e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionPrefab: {fileID: 0}
   _health: {fileID: 789233370}
 --- !u!114 &789233372
 MonoBehaviour:
@@ -277,6 +277,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 789233371}
   _healthFlashMonitor: {fileID: 0}
+--- !u!114 &1385151610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652177332744242239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7a4a7f8ff623f4cbede17fe7d6bed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameManager: {fileID: 0}
+  _gameInput: {fileID: 0}
+  _machineGunNavigationInput: {fileID: 0}
+  _target: {fileID: 789233371}
+  _playerCollider: {fileID: 789233369}
 --- !u!1 &6652177333320738917
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,12 +694,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
       propertyPath: _bulletSpeed
-      value: 450
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
       propertyPath: _bulletPrefab
       value: 
-      objectReference: {fileID: 7452537332603971862, guid: ba760c59278927541abd74c7752e74c1, type: 3}
+      objectReference: {fileID: 7783066018846126299, guid: ba760c59278927541abd74c7752e74c1, type: 3}
     - target: {fileID: 8952568084315246780, guid: 0ad996c9862f15440b4ca533baea075e, type: 3}
       propertyPath: _shootingPoint
       value: 

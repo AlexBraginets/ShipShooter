@@ -1,19 +1,28 @@
 using System;
 using UnityEngine;
 
-public class GameInput : MonoBehaviour
+namespace UserInput
 {
-    public event Action OnStartShooting;
-    public event Action OnStopShooting;
-
-    private void Update()
+    public class GameInput : MonoBehaviour
     {
-        if (Input.GetMouseButtonDown(0))
+        public event Action OnStartShooting;
+        public event Action OnStopShooting;
+        public bool IsBlocked { get; set; }
+        private void Update()
         {
-            OnStartShooting?.Invoke();
+            if (IsBlocked) return;
+            if (Input.GetMouseButtonDown(0))
+            {
+                OnStartShooting?.Invoke();
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                StopShooting();
+            }
         }
 
-        if (Input.GetMouseButtonUp(0))
+        public void StopShooting()
         {
             OnStopShooting?.Invoke();
         }

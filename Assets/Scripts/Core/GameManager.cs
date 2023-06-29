@@ -18,6 +18,10 @@ namespace Core
       {
          _winPopup.Show();
       }
-      
+
+      public void Lose()
+      {
+         Debug.LogError("You lost!");
+      }
    }
 }

@@ -2430,81 +2430,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 23856432, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0002711434
-      objectReference: {fileID: 0}
-    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.7870321
-      objectReference: {fileID: 0}
-    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.73145473
-      objectReference: {fileID: 0}
-    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.98185325
-      objectReference: {fileID: 0}
-    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.18964222
-      objectReference: {fileID: 0}
-    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.000013577985
-      objectReference: {fileID: 0}
-    - target: {fileID: 23856433, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 789233370, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: _value
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 789233370, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: _maxValue
-      value: 1500
-      objectReference: {fileID: 0}
     - target: {fileID: 789233372, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _healthFlashMonitor
       value: 
       objectReference: {fileID: 939401445}
+    - target: {fileID: 1385151610, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: _gameInput
+      value: 
+      objectReference: {fileID: 1147708659}
+    - target: {fileID: 1385151610, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: _gameManager
+      value: 
+      objectReference: {fileID: 1657878701}
+    - target: {fileID: 1385151610, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: _machineGunNavigationInput
+      value: 
+      objectReference: {fileID: 2139328734}
     - target: {fileID: 1409251989, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0002711434
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.7870321
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.73145473
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.98185325
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.18964222
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.000013577985
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _gameInput
@@ -2514,14 +2458,6 @@ PrefabInstance:
       propertyPath: _ironSight
       value: 
       objectReference: {fileID: 1480203009}
-    - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: _bulletSpeed
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
-      propertyPath: _bulletPrefab
-      value: 
-      objectReference: {fileID: 7783066018846126299, guid: ba760c59278927541abd74c7752e74c1, type: 3}
     - target: {fileID: 6652177332744242237, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _rotationPoint
       value: 
