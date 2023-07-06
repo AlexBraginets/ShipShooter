@@ -8,6 +8,7 @@ namespace Combat
         [SerializeField] private float _damage = 5;
         [SerializeField] private float _radius;
         [SerializeField] private PoolObject _dustPrefab;
+        [SerializeField] private LayerMask _hittableLayers;
         private Vector3 m_Velocity;
         private Vector3 m_LastPosition;
 
@@ -33,7 +34,7 @@ namespace Combat
             Vector3 displacementSinceLastFrame = transform.position - m_LastPosition;
             Vector3 direction = displacementSinceLastFrame.normalized;
             float distance = displacementSinceLastFrame.magnitude;
-            RaycastHit[] hits = Physics.SphereCastAll(m_LastPosition, _radius, direction, distance);
+            RaycastHit[] hits = Physics.SphereCastAll(m_LastPosition, _radius, direction, distance, _hittableLayers);
             hit = new RaycastHit();
             hit.distance = float.MaxValue;
             bool isHit = false;

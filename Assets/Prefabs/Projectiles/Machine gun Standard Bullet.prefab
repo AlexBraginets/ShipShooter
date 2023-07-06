@@ -205,8 +205,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14f59cfe7cb7334c9615cba88216818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damage: 5
   _radius: 0.05
   _dustPrefab: {fileID: 7049417674690678400, guid: 3dbb2ce6aad411d4c806391df358c403, type: 3}
+  _hittableLayers:
+    serializedVersion: 2
+    m_Bits: 364599
 --- !u!1 &7452537334286822052
 GameObject:
   m_ObjectHideFlags: 0
