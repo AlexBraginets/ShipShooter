@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Combat
 {
-    public class Bullet : MonoBehaviour
+    public class Bullet : BaseBullet
     {
         [SerializeField] private float _damage;
         [SerializeField] private PoolObject _dustPrefab;
@@ -29,7 +29,7 @@ namespace Combat
             gameObject.SetActive(false);
         }
 
-        public void SetVelocity(Vector3 velocity)
+        public override void SetVelocity(Vector3 velocity)
         {
             _rb.velocity = velocity;
         }
