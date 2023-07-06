@@ -5,10 +5,12 @@ namespace Combat
 {
     public class StandardBullet : BaseBullet
     {
+        [SerializeField] private float _damage = 5;
         [SerializeField] private float _radius;
         [SerializeField] private PoolObject _dustPrefab;
         private Vector3 m_Velocity;
         private Vector3 m_LastPosition;
+
         public override void SetVelocity(Vector3 velocity)
         {
             m_Velocity = velocity;
@@ -57,10 +59,19 @@ namespace Combat
 
         private void OnHit(RaycastHit hit)
         {
+            gameObject.SetActive(false);
+            SpawnHitVFX(hit);
+            if (hit.collider.TryGetComponent(out Target target))
+            {
+                target.Damage(_damage);
+            }
+        }
+
+        private void SpawnHitVFX(RaycastHit hit)
+        {
             var dust = Pool.Get(_dustPrefab);
             dust.transform.forward = hit.normal;
             dust.transform.position = hit.point;
-            gameObject.SetActive(false);
             dust.Disable(.5f);
         }
     }

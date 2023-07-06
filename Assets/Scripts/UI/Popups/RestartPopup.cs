@@ -14,6 +14,7 @@ namespace UI.Popups
         [SerializeField] private GameInput _gameInput;
         public void Show()
         {
+            Cursor.visible = true;
             gameObject.SetActive(true);
             _gameInput.IsBlocked = true;
             _gameInput.StopShooting();

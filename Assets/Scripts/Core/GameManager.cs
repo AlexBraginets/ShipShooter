@@ -13,6 +13,7 @@ namespace Core
       [SerializeField] private float _showWinPopupDelay;
       private void Awake()
       {
+         Cursor.visible = false;
          Application.targetFrameRate = 120;
          _objective.OnObjectiveCompleted += Win;
       }

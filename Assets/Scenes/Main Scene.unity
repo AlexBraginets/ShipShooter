@@ -1800,7 +1800,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1324245689}
-  - component: {fileID: 1324245690}
   m_Layer: 21
   m_Name: Fixed Player
   m_TagString: Untagged
@@ -1823,20 +1822,6 @@ Transform:
   m_Father: {fileID: 789233368}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1324245690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324245688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e08148e265b2bb4bb90ad6be8ceff49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 1385151606}
-  _refLocation: {fileID: 4985196151666126026, guid: 71be9a762a0a02e4487b6e8197413420, type: 3}
 --- !u!1 &1338213568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,12 +2155,12 @@ GameObject:
   - component: {fileID: 1439997213}
   - component: {fileID: 1439997212}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Bullet bug cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1439997212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3857,31 +3842,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00027114365
+      value: -20.343096
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7870321
+      value: -1.8550653
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7314548
+      value: 69.651695
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.98185325
+      value: -0.09515434
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18964222
+      value: 0.031820122
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000013577985
+      value: -0.9862596
       objectReference: {fileID: 0}
     - target: {fileID: 1409251990, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.13124505
       objectReference: {fileID: 0}
     - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _gameInput
@@ -4034,7 +4019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3569167473953898994, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3569167473953898995, guid: 63e5be2f9cb9c7043832a34fdb643d70, type: 3}
       propertyPath: m_RootOrder
