@@ -15,7 +15,7 @@ namespace Combat
         public event Action OnStartShooting;
         public event Action OnStopShooting;
         public event Action OnShoot;
-        [SerializeField] private Bullet _bulletPrefab;
+        [SerializeField] private BaseBullet _bulletPrefab;
         [SerializeField] private Transform _shootingPoint;
         [SerializeField] private float _bulletSpeed;
         [SerializeField] private MuzzleFlash[] _muzzleFlashes;

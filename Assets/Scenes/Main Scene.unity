@@ -3895,6 +3895,10 @@ PrefabInstance:
       propertyPath: _bulletSpeed
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 2336419564715419041, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: -7247273587480468712, guid: 035fb80f46da1854a8ed062a21453dd6, type: 3}
     - target: {fileID: 6652177332744242237, guid: 7fd8b8b41ba21f245952a6b2092861ca, type: 3}
       propertyPath: _rotationPoint
       value: 
